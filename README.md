@@ -1,78 +1,75 @@
-# Jekyll-Bootstrap
+# Bitwiser Jekyll theme.
+A minimalist Jekyll theme that puts focus on content.
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+### For subdirectory blog support, checkout [subdirectory](https://github.com/brijeshb42/bitwiser/tree/subdirectory) tag.
 
-## Usage
+## Features
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+* Clean, simple and responsive layout
+* Code formatting.
+* Sitemap included.
+* Google analytics.
+* Disqus commenting (Loaded lazily).
+* Share post to facebook and twitter.
+* Robots.txt included.
+* Custom 404 error page.
+* Clean material like layout.
+* Awesome navigation menu on small screens.
 
-## Version
+Theme website: http://bitwiser.in/bitwiser/
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+Demo post: http://bitwiser.in/bitwiser/demo.html
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
+Usage: [http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html)
 
-## Milestones
+Download latest Zip: [Here](http://goo.gl/iC85jv)
 
-[0.4.0](https://github.com/plusjade/jekyll-bootstrap/milestones/v%200.4.0) - next release [ETA 03/29/2015]
+Or browse releases: [Releases](https://github.com/brijeshb42/bitwiser/releases)
 
-### GOALS
+To get started with this theme, read the [usage guide](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html). After that start creating post files in the ```_posts``` directory and push your changes to github.
 
-* No open PRs against master branch.
-* Squash some bugs.
-* Add some new features (low-hanging fruit).
-* Establish social media presence.
+Report issues: [Issues](https://github.com/brijeshb42/bitwiser/issues/new)
 
+If you are using this theme, do not forget to :star: this repo or tweet [@brijeshb42](https://twitter.com/brijeshb42).
 
-### Bugs
-
-|Bug |Description
-|------|---------------
-|[#86](https://github.com/plusjade/jekyll-bootstrap/issues/86)  |&#x2611; Facebook Comments
-|[#113](https://github.com/plusjade/jekyll-bootstrap/issues/113)|&#x2611; ASSET_PATH w/ page & post
-|[#144](https://github.com/plusjade/jekyll-bootstrap/issues/144)|&#x2610; BASE_PATH w/ FQDN
-|[#227](https://github.com/plusjade/jekyll-bootstrap/issues/227)|&#x2611; Redundant JB/setup
-
-### Features
-
-|Bug |Description
-|------|---------------
-|[#98](https://github.com/plusjade/jekyll-bootstrap/issues/98)  |&#x2611; GIST Integration
-|[#244](https://github.com/plusjade/jekyll-bootstrap/issues/244)|&#x2611; JB/file_exists Helper
-|[#42](https://github.com/plusjade/jekyll-bootstrap/issues/42)  |&#x2611; Sort collections of Pages / Posts
-|[#84](https://github.com/plusjade/jekyll-bootstrap/issues/84)  |&#x2610; Detecting production mode
-
-### TODOS
-
-Review existing pull requests against plusjake/jekyll-bootstrap:master. Merge or close each.
-
-* Create twitter account. Add link / icon on jekyllbootstrap.com.
-* Create blog posts under plusjade/gh-pages, expose on jekyllbootstrap.com, feed to twitter account.
-* Announce state of project, announce roadmap(s), announce new versions as they’re released.
-
-## Contributing
+Pull requests are also welcome :thumbsup:.
 
 
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
+## Getting Started
 
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+(Assuming you know what Jekyll and Github pages are.)
 
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+* Download this theme's zip file from [here](http://goo.gl/iC85jv) or clone the repository using ```git clone https://github.com/brijeshb42/bitwiser.git```. If you are cloning, then make sure to delete the ```gh-pages``` branch as it includes the files for the theme website.
 
-**Jekyll-Bootstrap Documentation Website.**
+* Install ```ruby``` and then do ```gem install jekyll```. This theme uses the latest ```jekyll``` version. So if you already have it installed, then upgrade it.
 
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
+* ```_config.yml``` describes all the variables which you are required to set. The description begins with double hash(```##```). And the value to be set is commented below it using ```#```.
 
+* Edit ```_config.yml``` according to your requirements.
+	* ```name``` : ```Your website name```
+	* ```disqus``` : ```disqusForumName```
+		If this value is present, disqus commenting will be automatically added to all your blog posts.
+	* ```ga_id``` : ```googleAnalyticsID```
+		If this value is present, google analytics will be added to your website/blog.
+		If ```ga_id``` is present, make sure that ```ga_domain``` is also present.
+	* ```description```: ```A short description of your website to be included in meta tag of your homepage```
+	* ```keywords``` : ```a few frequently used keywords on your site```
+	* ```links``` : This variable has a few commonly used social networks' links
+		* ```facebook```: ```facebookId```
+		* ```twitter``` : ```twitterHandle```
+		* ```email```: ```email@example.com```
+		* ```github```: ```githubUsername```
+	* ```about_image```: This is a new variable introduced. If defined, make sure the image is present in ```img``` directory. If not defined, a provided placeholder image is used. ** If github link is provided in ```links``` variable, then the github profile picture will be used if ```about_image``` is not defined.
+	* ```sidebar```: This is a new variable introduced. It is used to enable/disable sidebar. If present, a sidebar will be displayed. To disable sidebar, just comment this line using ```#```.
 
-## License
+* After setting the values in ```_config.yml```, you can start adding posts in the ```_posts``` directory. Remove the example posts from the directory. The name of files in this directory should be according to specifications by ```jekyll```, i.e, ```YYYY-MM-DD-your-post-title.md```. **Note** that the file name extenion can be anything from md, markdown, mkd, textile or html.
 
-[MIT](http://opensource.org/licenses/MIT)
+* Replace the image files ```favicon.png``` and ```sharer.png``` with images of your own.
+
+* Test the site on local machine using ```jekyll serve``` in the theme directory.
+
+* If all works well, ```git push``` your changes to your github pages repository ```https://github.com/githubUserName/githubUserName.github.io```
+
+* Then visit your blog at [http://githubUserName.github.io](http://githubUserName.github.io).
+
+* If you want to use a custom domain, then edit the ```CNAME``` file and add your own domain ```example.com```. Make sure your domain points to github ip address.
